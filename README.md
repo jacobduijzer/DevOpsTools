@@ -14,6 +14,28 @@ amount=$(dotnet /home/jacob/.config/polybar/modules/polybar-devops-builds/DevOps
 echo $amount
 ```
 
+For those interested in my polybar config:
+```
+[module/devopsbuilds]
+type = custom/script
+exec = ~/.config/polybar/modules/polybar-devops-builds/polybar-devops.sh builds
+interval = 30 
+format-prefix = "  "
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+format-padding = 0
+
+[module/devopsdeployments]
+type = custom/script
+exec = ~/.config/polybar/modules/polybar-devops-builds/polybar-devops.sh deployments
+interval = 30 
+format-prefix = "  "
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+format-padding = 0
+
+```
+
 ## Getting started
 
 1. Create an appsettings.json file like this in the root folder:
