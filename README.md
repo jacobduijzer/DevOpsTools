@@ -2,6 +2,19 @@
 
 ## Getting started
 
+1. Create an appsettings.json file like this in the root folder:
+
+```json
+{
+  "DevOpsSettings":
+  {
+    "BaseAddress": "https://somedevsopsurl/",
+    "PersonalAccessToken": "your devops personal access token here",
+    "CurrentProject": "The project you want to retreive information from",
+    "Top": 10
+  }
+}
+```
 
 
 ## Links
