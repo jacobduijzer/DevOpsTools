@@ -51,6 +51,11 @@ format-padding = 0
   }
 }
 ```
+## Todo
+
+- Add more features
+- Make it a .net global tool
+- Add better way of configuring, more projects
 
 ## Links
 
