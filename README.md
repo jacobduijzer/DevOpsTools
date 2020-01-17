@@ -16,7 +16,6 @@
 }
 ```
 
-
 ## Links
 
 - Inspired by and used some code from [AnyStatus](https://github.com/AnyStatus/AzureDevOps).

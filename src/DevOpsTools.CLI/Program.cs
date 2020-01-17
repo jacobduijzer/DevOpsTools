@@ -33,7 +33,7 @@ namespace DevOpsTools.CLI
 
         public static IHostBuilder CreateHostBuilder() =>
             Host.CreateDefaultBuilder()
-                .ConfigureHostConfiguration(configHost => configHost.SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json"))
+                .ConfigureHostConfiguration(configHost => configHost.SetBasePath(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location)).AddJsonFile("appsettings.json"))
                 .ConfigureServices((hostContext, services) =>
                 {
                     services
